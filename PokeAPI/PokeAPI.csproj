@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D758D45-8203-4717-8537-8A638859C4CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PokeAPI</RootNamespace>
+    <AssemblyName>PokeAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\..\Documents\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\..\Documents\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>..\..\..\..\Documents\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
+      <HintPath>..\..\..\..\Documents\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Documents\Guna_UI_Framework_Ultimate_2.0.0.1_Downloadly.ir\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Documents\Guna_UI_Framework_Ultimate_2.0.0.1_Downloadly.ir\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiPokemon.cs" />
+    <Compile Include="DadosPokemon.cs" />
+    <Compile Include="Forms\Forms_ListaPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms_ListaPokemon.Designer.cs">
+      <DependentUpon>Forms_ListaPokemon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms_TelaCarregamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms_TelaCarregamento.Designer.cs">
+      <DependentUpon>Forms_TelaCarregamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms_Tipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms_Tipos.Designer.cs">
+      <DependentUpon>Forms_Tipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms_TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms_TelaInicial.Designer.cs">
+      <DependentUpon>Forms_TelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_ImagemPokemon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_ImagemPokemon.Designer.cs">
+      <DependentUpon>Control_ImagemPokemon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetandoCorFundo.cs" />
+    <Compile Include="TraduzirTipo.cs" />
+    <EmbeddedResource Include="Forms\Forms_ListaPokemon.resx">
+      <DependentUpon>Forms_ListaPokemon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms_TelaCarregamento.resx">
+      <DependentUpon>Forms_TelaCarregamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms_Tipos.resx">
+      <DependentUpon>Forms_Tipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms_TelaInicial.resx">
+      <DependentUpon>Forms_TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_ImagemPokemon.resx">
+      <DependentUpon>Control_ImagemPokemon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_page_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_page1_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_to_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_to_blue_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_page_blue_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarregandoPokemon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1CarregandoPokemon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarregandoPokemon2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarregandoLoading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarregandoLoading3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarregandoLoading4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarregandoLoading5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agua1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agua2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psiquico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venenoso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrestre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lutador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eletrico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sombrio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inseto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23625.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bordas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_page_branco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_to_branco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagemPokerBolas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoPokemon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
