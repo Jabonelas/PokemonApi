@@ -2,7 +2,7 @@
 Pokedex API
 
 
-Projeto de uma Pokedex para busca de Pokemons, desenvolvido por mim sem fins lucrativos, apenas por experiência para o desenvolvimento das minhas habilidades em C#  e consumo de Api Rest.
+Projeto de uma Pokedex para busca de Pokemons, desenvolvido por mim sem fins lucrativos, apenas por experiência para o desenvolvimento das minhas habilidades em C#  e consumo de API.
 
 ![enter image description here](https://media0.giphy.com/media/R0WFyJYY16ltYtJS8c/giphy.gif?cid=790b76118d3de495d14a7a5ab4492ef2ea99237aec6d0b31&rid=giphy.gif&ct=g)
 
